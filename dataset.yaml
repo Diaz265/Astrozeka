@@ -1,0 +1,7 @@
+path: dataset          # Root folder containing images & labels
+
+train: images          # Folder with training images
+val: images_extra      # Folder with validation images
+
+names:
+  0: debris            # Class 0 = debris
