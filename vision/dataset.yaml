@@ -1,0 +1,16 @@
+# YOLOv8 dataset config for AstroZeka debris detection.
+#
+# Fixed vs. original: `val: images_extra` pointed at a folder that was
+# never created anywhere in the project, so training would fail looking
+# for validation data. Now points at the standard train/val split under
+# data/cv/dataset/, which is currently empty (placeholders only) — you
+# must add your own labeled images before training will do anything.
+
+path: ../data/cv/dataset   # Root folder containing images & labels, relative to this file
+
+train: images/train        # Folder with training images
+val: images/val             # Folder with validation images
+
+names:
+  0: debris                 # Class 0 = debris
+  1: satellite               # Class 1 = active satellite (add labels if you want this distinguished)

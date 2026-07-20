@@ -1,0 +1,10 @@
+# Orbital pipeline
+requests>=2.31
+numpy>=1.26
+skyfield>=1.49
+plotly>=5.20
+
+# Computer-vision pipeline (optional — only needed for vision/*.py)
+opencv-python>=4.9
+ultralytics>=8.2
+torch>=2.2
