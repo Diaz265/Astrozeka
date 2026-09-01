@@ -4,3 +4,4 @@ outputs/
 data/tle/*.txt
 runs/
 *.pt
+.DS_Store
